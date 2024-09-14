@@ -7,7 +7,7 @@ class Menu:
     def __init__(self):
         pygame.init()
         self.screen = pygame.display.set_mode((500, 620))
-        self.BG = pygame.image.load("Background/Background.png")
+        self.BG = pygame.image.load("Background/background.jpg")
         self.Tetris = TetrisGame()
         self.game = Game()
         self.checkGame = True
@@ -155,7 +155,7 @@ class Menu:
 
             MENU_MOUSE_POS = pygame.mouse.get_pos()
 
-            MENU_TEXT = pygame.image.load("Background/Logo.png")
+            MENU_TEXT = pygame.image.load("Background/logo.png")
             MENU_RECT = MENU_TEXT.get_rect(center=(250, 100))
 
             PLAY_BUTTON = Button(image=None, pos=(250, 250), 
